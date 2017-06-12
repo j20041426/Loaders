@@ -65,7 +65,7 @@
   -webkit-animation: scale 0.75s 0.36s infinite cubic-bezier(.2, .68, .18, 1.08);
           animation: scale 0.75s 0.36s infinite cubic-bezier(.2, .68, .18, 1.08); }
 .ball-pulse > div {
-  background-color: #fff;
+  background-color: @color;
   width: 15px;
   height: 15px;
   border-radius: 100%;
@@ -113,7 +113,7 @@
   -webkit-animation: ball-pulse-sync 0.6s 0.21s infinite ease-in-out;
           animation: ball-pulse-sync 0.6s 0.21s infinite ease-in-out; }
 .ball-pulse-sync > div {
-  background-color: #fff;
+  background-color: @color;
   width: 15px;
   height: 15px;
   border-radius: 100%;
@@ -143,7 +143,7 @@
     opacity: 0; } }
 
 .ball-scale > div {
-  background-color: #fff;
+  background-color: @color;
   width: 15px;
   height: 15px;
   border-radius: 100%;
@@ -185,7 +185,7 @@
 .ball-rotate {
   position: relative; }
   .ball-rotate > div {
-    background-color: #fff;
+    background-color: @color;
     width: 15px;
     height: 15px;
     border-radius: 100%;
@@ -197,7 +197,7 @@
       -webkit-animation: rotate 1s 0s cubic-bezier(.7, -.13, .22, .86) infinite;
               animation: rotate 1s 0s cubic-bezier(.7, -.13, .22, .86) infinite; }
     .ball-rotate > div:before, .ball-rotate > div:after {
-      background-color: #fff;
+      background-color: @color;
       width: 15px;
       height: 15px;
       border-radius: 100%;
@@ -226,14 +226,14 @@
             transform: rotate(360deg) scale(1); } }
 
 .ball-clip-rotate > div {
-  background-color: #fff;
+  background-color: @color;
   width: 15px;
   height: 15px;
   border-radius: 100%;
   margin: 2px;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
-  border: 2px solid #fff;
+  border: 2px solid @color;
   border-bottom-color: transparent;
   height: 25px;
   width: 25px;
@@ -277,7 +277,7 @@
     left: 0px;
     border-radius: 100%; }
     .ball-clip-rotate-pulse > div:first-child {
-      background: #fff;
+      background: @color;
       height: 16px;
       width: 16px;
       top: 9px;
@@ -286,12 +286,12 @@
               animation: scale 1s 0s cubic-bezier(.09, .57, .49, .9) infinite; }
     .ball-clip-rotate-pulse > div:last-child {
       position: absolute;
-      border: 2px solid #fff;
+      border: 2px solid @color;
       width: 30px;
       height: 30px;
       background: transparent;
       border: 2px solid;
-      border-color: #fff transparent #fff transparent;
+      border-color: @color transparent @color transparent;
       -webkit-animation: rotate 1s 0s cubic-bezier(.09, .57, .49, .9) infinite;
               animation: rotate 1s 0s cubic-bezier(.09, .57, .49, .9) infinite;
       -webkit-animation-duration: 1s;
@@ -318,7 +318,7 @@
     position: absolute;
     left: 0px;
     top: 0px;
-    border: 2px solid #fff;
+    border: 2px solid @color;
     border-bottom-color: transparent;
     border-top-color: transparent;
     border-radius: 100%;
@@ -334,7 +334,7 @@
       height: 15px;
       -webkit-animation-duration: 0.5s;
               animation-duration: 0.5s;
-      border-color: #fff transparent #fff transparent;
+      border-color: @color transparent @color transparent;
       -webkit-animation-direction: reverse;
               animation-direction: reverse; }
 
@@ -372,7 +372,7 @@
   height: 50px;
   width: 50px;
   border-radius: 100%;
-  border: 2px solid #fff;
+  border: 2px solid @color;
   -webkit-animation: ball-scale-ripple 1s 0s infinite cubic-bezier(.21, .53, .56, .8);
           animation: ball-scale-ripple 1s 0s infinite cubic-bezier(.21, .53, .56, .8); }
 
@@ -430,7 +430,7 @@
     width: 50px;
     height: 50px;
     border-radius: 100%;
-    border: 2px solid #fff;
+    border: 2px solid @color;
     -webkit-animation: ball-scale-ripple-multiple 1.25s 0s infinite cubic-bezier(.21, .53, .56, .8);
             animation: ball-scale-ripple-multiple 1.25s 0s infinite cubic-bezier(.21, .53, .56, .8); }
 
@@ -457,7 +457,7 @@
             transform: scale(1); } }
 
 .ball-beat > div {
-  background-color: #fff;
+  background-color: @color;
   width: 15px;
   height: 15px;
   border-radius: 100%;
@@ -511,7 +511,7 @@
     -webkit-animation-delay: 0.4s;
             animation-delay: 0.4s; }
   .ball-scale-multiple > div {
-    background-color: #fff;
+    background-color: @color;
     width: 15px;
     height: 15px;
     border-radius: 100%;
@@ -651,7 +651,7 @@
     width: 10px;
     height: 10px;
     border-radius: 100%;
-    border: 1px solid #fff; }
+    border: 1px solid @color; }
     .ball-triangle-path > div:nth-of-type(1) {
       top: 50px; }
     .ball-triangle-path > div:nth-of-type(2) {
@@ -753,7 +753,7 @@
             transform: scale(0.75); } }
 
 .ball-pulse-rise > div {
-  background-color: #fff;
+  background-color: @color;
   width: 15px;
   height: 15px;
   border-radius: 100%;
@@ -838,7 +838,7 @@
     -webkit-animation-duration: 1.19s;
             animation-duration: 1.19s; }
   .ball-grid-beat > div {
-    background-color: #fff;
+    background-color: @color;
     width: 15px;
     height: 15px;
     border-radius: 100%;
@@ -932,7 +932,7 @@
     -webkit-animation-duration: 1.06s;
             animation-duration: 1.06s; }
   .ball-grid-pulse > div {
-    background-color: #fff;
+    background-color: @color;
     width: 15px;
     height: 15px;
     border-radius: 100%;
@@ -1013,7 +1013,7 @@
     -webkit-animation: ball-spin-fade-loader 1s 0.84s infinite linear;
             animation: ball-spin-fade-loader 1s 0.84s infinite linear; }
   .ball-spin-fade-loader > div {
-    background-color: #fff;
+    background-color: @color;
     width: 15px;
     height: 15px;
     border-radius: 100%;
@@ -1145,7 +1145,7 @@
       -ms-transform: translate(-15px, -15px);
           transform: translate(-15px, -15px); }
   .ball-zig-zag > div {
-    background-color: #fff;
+    background-color: @color;
     width: 15px;
     height: 15px;
     border-radius: 100%;
@@ -1269,7 +1269,7 @@
       -ms-transform: translate(-15px, -15px);
           transform: translate(-15px, -15px); }
   .ball-zig-zag-deflect > div {
-    background-color: #fff;
+    background-color: @color;
     width: 15px;
     height: 15px;
     border-radius: 100%;
@@ -1331,7 +1331,7 @@
   -webkit-animation: line-scale 1s 0.5s infinite cubic-bezier(.2, .68, .18, 1.08);
           animation: line-scale 1s 0.5s infinite cubic-bezier(.2, .68, .18, 1.08); }
 .line-scale > div {
-  background-color: #fff;
+  background-color: @color;
   width: 4px;
   height: 35px;
   border-radius: 2px;
@@ -1387,7 +1387,7 @@
   -webkit-animation-duration: 0.73s;
           animation-duration: 0.73s; }
 .line-scale-party > div {
-  background-color: #fff;
+  background-color: @color;
   width: 4px;
   height: 35px;
   border-radius: 2px;
@@ -1429,7 +1429,7 @@
             transform: scaley(1); } }
 
 .line-scale-pulse-out > div {
-  background-color: #fff;
+  background-color: @color;
   width: 4px;
   height: 35px;
   border-radius: 2px;
@@ -1473,7 +1473,7 @@
             transform: scaley(1); } }
 
 .line-scale-pulse-out-rapid > div {
-  background-color: #fff;
+  background-color: @color;
   width: 4px;
   height: 35px;
   border-radius: 2px;
@@ -1565,7 +1565,7 @@
     -webkit-animation: line-spin-fade-loader 1.2s 0.96s infinite ease-in-out;
             animation: line-spin-fade-loader 1.2s 0.96s infinite ease-in-out; }
   .line-spin-fade-loader > div {
-    background-color: #fff;
+    background-color: @color;
     width: 4px;
     height: 35px;
     border-radius: 2px;
@@ -1619,7 +1619,7 @@
   height: 0;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  border-bottom: 20px solid #fff;
+  border-bottom: 20px solid @color;
   -webkit-animation: triangle-skew-spin 3s 0s cubic-bezier(.09, .57, .49, .9) infinite;
           animation: triangle-skew-spin 3s 0s cubic-bezier(.09, .57, .49, .9) infinite; }
 
@@ -1662,7 +1662,7 @@
           animation-fill-mode: both;
   width: 50px;
   height: 50px;
-  background: #fff;
+  background: @color;
   border: 1px solid red;
   -webkit-animation: square-spin 3s 0s cubic-bezier(.09, .57, .49, .9) infinite;
           animation: square-spin 3s 0s cubic-bezier(.09, .57, .49, .9) infinite; }
@@ -1832,7 +1832,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #fff;
+    background-color: @color;
     -webkit-animation: cube-transition 1.6s 0s infinite ease-in-out;
             animation: cube-transition 1.6s 0s infinite ease-in-out; }
     .cube-transition > div:last-child {
@@ -1876,7 +1876,7 @@
     border-radius: 100%;
     -webkit-animation: spin-rotate 0.6s 0s infinite linear;
             animation: spin-rotate 0.6s 0s infinite linear;
-    background-image: -webkit-linear-gradient(transparent 0%, transparent 70%, #fff 30%, #fff 100%);
-    background-image: linear-gradient(transparent 0%, transparent 70%, #fff 30%, #fff 100%);
+    background-image: -webkit-linear-gradient(transparent 0%, transparent 70%, @color 30%, @color 100%);
+    background-image: linear-gradient(transparent 0%, transparent 70%, @color 30%, @color 100%);
     width: 100%;
     height: 100%; }

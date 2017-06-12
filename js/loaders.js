@@ -1,6 +1,6 @@
-//loading
+//loaders
 //demo: https://connoratherton.com/loaders
-var Loading = (function(){
+var Loader = (function(){
 	
 	var _instance;
 	
@@ -89,10 +89,12 @@ var Loading = (function(){
 	
 	LoadingFun.prototype.show = function(){
 		_instance.style.display = "flex";
+		return this;
 	}
 	
 	LoadingFun.prototype.hide = function(){
 		_instance.style.display = "none";
+		return this;
 	}
 	
 	return LoadingFun;

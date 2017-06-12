@@ -15,20 +15,13 @@
 			}
 		</style>
 	</head>
-	<body onclick="action()">
-		<script src="js/utils.js"></script>
+	<body>
+		<script src="js/loaders.js"></script>
 		<script>
-			var loader = new Loading({type:"pacman",color:"#cc0000"});
-			var a = true;
-			function action(){
-				console.log("click");
-				if(a) {
-					loader.hide();
-				}else{
-					loader.show();
-				}
-				a = !a;
-			}
+			var loader = new Loader({color:"#cc0000"}).show();
+			setTimeout(function(){
+				loader.hide();
+			},3000);
 		</script>
 	</body>
 </html>
